@@ -1,0 +1,16 @@
+{"name":"edomi_power",
+    "manufacturer":"edomi",
+    "version":1,
+    "type":"ACCESSOIRE",
+    "variables":{
+      "Volume":""
+    },
+    "buttons":{
+      "POWER Fernsehen": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1001&kovalue=1"},
+      "POWER Movie": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1002&kovalue=1"},
+      "POWER Musik": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1003&kovalue=1"},
+      "POWER WiiU": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1004&kovalue=1"},
+      "POWER Xbox": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1005&kovalue=1"},
+      "POWER Aus": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1006&kovalue=1"}
+    }
+}
