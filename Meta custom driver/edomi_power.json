@@ -3,14 +3,20 @@
     "version":1,
     "type":"ACCESSOIRE",
     "variables":{
-      "Volume":""
+      "edomiURI": "192.168.5.7",
+      "edomiKOfernsehen": "2552",
+      "edomiKOmovie": "2553",
+      "edomiKOmusik": "2566",
+      "edomiKOwiiU": "2643",
+      "edomiKOxbox": "2644",
+      "edomiKOaus": "2554"
     },
     "buttons":{
-      "POWER Fernsehen": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1001&kovalue=1"},
-      "POWER Movie": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1002&kovalue=1"},
-      "POWER Musik": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1003&kovalue=1"},
-      "POWER WiiU": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1004&kovalue=1"},
-      "POWER Xbox": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1005&kovalue=1"},
-      "POWER Aus": {"label":"", "type":"http-get", "command":"http://192.168.7.7/remote/?login=remote&pass=remote&koid=1006&kovalue=1"}
+      "POWER Fernsehen": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOfernsehen&kovalue=1"},
+      "POWER Movie": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOmovie&kovalue=1"},
+      "POWER Musik": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOmusik&kovalue=1"},
+      "POWER WiiU": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOwiiU&kovalue=1"},
+      "POWER Xbox": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOxbox&kovalue=1"},
+      "POWER Aus": {"label":"", "type":"http-get", "command":"http://$edomiURI/remote/?login=remote&pass=remote&koid=$edomiKOaus&kovalue=1"}
     }
 }
